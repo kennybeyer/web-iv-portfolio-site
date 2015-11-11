@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+nav li {
+	color:black;
+}
+
+a:link {
+	color:black;
+}
+
+a:hover {
+	color:blue;
+}
+
+a:visited {
+	color:black;
+}
+
