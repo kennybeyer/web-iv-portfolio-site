@@ -12,9 +12,19 @@
   <body>
       <div class="row">
         <div class="large-12 columns">
+          <nav>
+          	<div class="large-12 columns nav">
+            	<ul>
+                	<li><a href="design.html">Design</a></li>
+                    <li><a href="photography.html">Photography</a></li>
+                    <li><a href="about-me.html">About Me</a></li>
+                </ul>
+            </div>
+          </nav>
           <img src="img/hero3d.jpg" alt="hero" class="hero">
+          <a id="trigger" onclick="click();">Click here!</a>
           <div class="laptop">
-          		
+          	<img id="my_image" src="img/lion.jpg"/>	
           </div>
           <nav>
           	<div class="large-12 columns nav">
@@ -28,14 +38,25 @@
         </div>
       </div>
       
+      
+
     
-    
+  
     
     
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script>
       $(document).foundation();
+	
+			$('#trigger').on({
+    'click': function() {
+         var src = ($('#my_image').attr('src') === 'img/house.jpg')
+            ? 'img/lion.jpg'
+            : 'img/house.jpg';
+         $('#my_image').attr('src', src);
+    }
+});
     </script>
   </body>
 </html>

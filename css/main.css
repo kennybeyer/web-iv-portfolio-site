@@ -7,8 +7,8 @@
 }
 
 .nav {
-	margin-top:-100px;
-	margin-left:20%;
+	margin-top:-48%;
+	margin-left:23%;
 	}
 
 nav li {
@@ -33,6 +33,18 @@ a:visited {
 	color:white;
 }
 
+.design-nav a:link {
+	color:black;
+}
+
+.design-nav a:hover {
+	color:blue;
+}
+
+.design-nav a:visited {
+	color:black;
+}
+
 .laptop {
 	position:absolute;
 	z-index:4;
@@ -42,3 +54,30 @@ a:visited {
 	margin-top:-40.5%;
 	margin-left:25.5%;
 }
+
+.portfolio {
+	margin-top:10%;
+}
+
+.img-1 {
+	background-color:black;
+	height:300px;
+	width:100%;
+}
+
+.img-2 {
+	background-color:black;
+	height:300px;
+	width:100%;
+}
+
+.img-3 {
+	background-color:black;
+	height:300px;
+	width:100%;
+}
+
+.port-margin {
+	margin-top:50px;
+}
+

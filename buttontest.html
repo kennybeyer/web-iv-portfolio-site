@@ -3,27 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <title>Untitled Document</title>
-<script> 
 
-function changeImage()
-{
-var img = document.getElementById("image");
-img.src="img/house.jpg";
-return false;
-}
-
-
-</script>
- 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
 
 
 </head>
 
 <body>
-	<img id="image" src="img/lion.jpg" alt="idk"/>
-<br><br><br>
-<a id="clickme" onclick="changeImage();">Click to change image!</a>
+<input value="change image" type="button" />
+<img src="img/lion.jpg" />
+<script> 
+$('input').toggle(
+    function(){
+        $('img').attr('src', 'img/car 2.jpg');
+    }, function() {
+        $('img').attr('src', 'img/house.jpg');
+    }, function() {
+        $('img').attr('src', 'img/hero3d.jpg');
+    }
+);
+</script>
+ 
 </body>
 </html>
