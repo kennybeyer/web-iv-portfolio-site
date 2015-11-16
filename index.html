@@ -7,12 +7,20 @@
     <link rel="stylesheet" href="css/foundation.css"/>
     <link rel="stylesheet" href="css/normalize.css"/>
     <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/pgwslideshow.css"/>
+	<link rel="stylesheet" href="css/pgwslideshow.min.css"/>
+	<link rel="stylesheet" href="css/pgwslideshow_light.css"/>
+	<link rel="stylesheet" href="css/pgwslideshow_light.min.css"/>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="js/vendor/modernizr.js"></script>
-  </head>
-  <body>
-      <div class="row">
-        <div class="large-12 columns">
-          <nav>
+    <script src="js/pgwslideshow.js"></script>
+	<script src="js/pgwslideshow.min.js"></script>
+  	</head>
+  	<body>
+      
+        <div>
+          <!--<nav>
           	<div class="large-12 columns nav">
             	<ul>
                 	<li><a href="design.html">Design</a></li>
@@ -20,12 +28,11 @@
                     <li><a href="about-me.html">About Me</a></li>
                 </ul>
             </div>
-          </nav>
-          <img src="img/hero3d.jpg" alt="hero" class="hero">
-          <a id="trigger" onclick="click();">Click here!</a>
-          <div class="laptop">
-          	<img id="my_image" src="img/lion.jpg"/>	
-          </div>
+          </nav>-->
+          <img src="img/hero3d_2_web.jpg" alt="hero" class="hero">
+          <!--<div class="laptop">
+          		
+          </div>-->
           <nav>
           	<div class="large-12 columns nav">
             	<ul>
@@ -36,8 +43,23 @@
             </div>
           </nav>
         </div>
-      </div>
       
+      <ul class="pgwSlideshow">
+                <li><img src="img/lion.jpg" alt="San Francisco, USA" data-description="Golden Gate Bridge"></li>
+                <li><img src="img/house.jpg" alt="Rio de Janeiro, Brazil"></li>
+                <li><img src="img/car 2.jpg" alt="" data-large-src="london.jpg"></li>
+                <li><img src="new-york.jpg" alt=""></li>
+                <li><img src="new-delhi.jpg" alt=""></li>
+                <li><img src="paris.jpg" alt=""></li>
+                <li><img src="sydney.jpg" alt=""></li>
+                <li><img src="tokyo.jpg" alt=""></li>
+                <li><img src="honk-kong.jpg" alt=""></li>
+                <li><img src="dakar.jpg" alt=""></li>
+                <li><img src="toronto.jpg" alt=""></li>
+                <li><a href="http://en.wikipedia.org/wiki/Monaco" target="_blank">
+            		<img src="monaco.jpg" alt="Monaco">
+        			</a></li>
+            </ul>
       
 
     
@@ -47,16 +69,10 @@
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script>
-      $(document).foundation();
-	
-			$('#trigger').on({
-    'click': function() {
-         var src = ($('#my_image').attr('src') === 'img/house.jpg')
-            ? 'img/lion.jpg'
-            : 'img/house.jpg';
-         $('#my_image').attr('src', src);
-    }
-});
+      	$(document).foundation() {
+		$(document).ready(function() {
+		$('.pgwSlideshow').pgwSlideshow();
+		});
     </script>
   </body>
 </html>

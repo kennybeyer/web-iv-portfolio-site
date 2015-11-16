@@ -2,13 +2,13 @@
 /* CSS Document */
 
 .hero {
-	position:relative;
+	
 	width:100%;
 }
 
 .nav {
-	margin-top:-48%;
-	margin-left:23%;
+	margin-top:-5.5%;
+	margin-left:27%;
 	}
 
 nav li {
@@ -60,24 +60,51 @@ a:visited {
 }
 
 .img-1 {
-	background-color:black;
+	background-color:gray;
 	height:300px;
-	width:100%;
 }
 
 .img-2 {
-	background-color:black;
+	background-color:gray;
 	height:300px;
-	width:100%;
 }
 
 .img-3 {
-	background-color:black;
+	background-color:gray;
 	height:300px;
-	width:100%;
 }
 
 .port-margin {
 	margin-top:50px;
 }
+ 
+.lg-product {
+	height:500px;
+	width:100%;
+	background-color:#A1A1A1;
+}
 
+.sm-product {
+	height:300px;
+	width:100%;
+	background-color:#A1A1A1;
+}
+
+.ppmargin {
+	margin:-3rem 0 0 0;
+}
+
+.selfie {
+	margin:5rem 0 0 0;
+	height:20rem;
+	/*background-color:gray;*/
+	
+}
+
+.bio {
+	margin:5rem 0 0 0;
+}
+
+.preview {
+	margin-top:2rem;
+}
