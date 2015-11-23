@@ -15,7 +15,6 @@ nav li {
 	display:inline;
 	margin-right:3rem;
 	color:white;
-	font-family: 'PT Sans', sans-serif;
 	text-transform:uppercase;
 	font-size:2rem;
 	font-weight:700;
@@ -112,4 +111,8 @@ a:visited {
 
 span.pointer {
     cursor: none;
+}
+
+.tk-brandon-grotesque {
+	font-weight:900;
 }
