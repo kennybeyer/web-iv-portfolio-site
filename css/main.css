@@ -2,8 +2,10 @@
 /* CSS Document */
 
 		
+
+		
 .hero {
-	
+	height:100%;
 	width:100%;
 }
 
@@ -45,18 +47,10 @@ a:visited {
 	color:black;
 }
 
-.laptop {
-	position:absolute;
-	z-index:4;
-	background-color:blue;
-	width:45.3%;
-	height:42%;
-	margin-top:-40.5%;
-	margin-left:25.5%;
-}
+
 
 .portfolio {
-	margin-top:10%;
+	margin-top:5%;
 }
 
 .img-1 {
@@ -109,10 +103,59 @@ a:visited {
 	margin-top:2rem;
 }
 
-span.pointer {
-    cursor: none;
-}
+
 
 .tk-brandon-grotesque {
 	font-weight:900;
+}
+
+/*nav ul li a:hover { 
+cursor:progress; 
+}*/
+
+* {
+	cursor: none;
+}
+figure#mouse-pointer {
+	background: url('../img/rocknroll.png') no-repeat;
+	width: 12rem;
+	height: 12rem;
+	position: absolute;
+	margin: -140px 0 0 -140px;
+	display: block;
+	z-index: 0;
+}
+
+figure#mouse-pointer a:hover {
+	background: url('../img/rocknrollbig.png') no-repeat;
+	width: 12rem;
+	height: 12rem;
+	position: absolute;
+	margin: -140px 0 0 -140px;
+	display: block;
+	z-index: 0;
+}
+
+@media only screen and (max-width: 64.0625em) {
+	nav li {
+	display:inline;
+	margin-right:3rem;
+	color:white;
+	text-transform:uppercase;
+	font-size:1.5rem;
+	font-weight:700;
+	
+}
+}
+
+@media only screen and (max-width: 40.0625em) {
+	nav li {
+	display:inline;
+	margin-right:3rem;
+	color:white;
+	text-transform:uppercase;
+	font-size:1rem;
+	font-weight:700;
+	
+}
 }

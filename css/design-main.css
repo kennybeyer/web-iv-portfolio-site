@@ -1,9 +1,16 @@
 @charset "UTF-8";
 
 nav {
-	margin:5% 0 0 0;
+	margin:10% 0 0 0;
 }
  
+ .underline {
+	 text-decoration:underline;
+ }
+ 
+.project-description {
+	text-transform:uppercase;
+}
 
 a:link {
 	color:black;
