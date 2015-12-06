@@ -1,13 +1,10 @@
 @charset "UTF-8";
 
 nav {
-	margin:10% 0 0 0;
+	margin:7% 0 7% 0;
 }
  
- .underline {
-	 border-bottom: 3px solid #000;
-	 padding-bottom: -5px;
- }
+ 
  
 .project-description {
 	text-transform:uppercase;
@@ -31,40 +28,55 @@ a:visited {
 	
 }
 
- .facebook {
-	 height:50px;
-	 width:50px;
-	 background-color:#A7A7A7;
- }
  
- .instagram {
-	 height:50px;
-	 width:50px;
-	 background-color:#A7A7A7;
- }
- 
- .twitter {
-	 height:50px;
-	 width:50px;
-	 background-color:#A7A7A7;
- }
  
  .icons ul {
-	 margin-left:40%; 
-	 margin-top:100px;
+	  
+	 margin-top:6rem;
  }
  
  .icons ul li {
 	 display:inline-block;
-	 margin-right:20px;
+	 margin-right:4%;
  }
+ 
+ .icons ul li:last-child {
+	 
+	 margin-right:0;
+ }
+ 
   h1 {
-	 margin:5rem 0 0 5rem;
-	 font-size:5rem; 
+	 margin:5rem 0 .4rem 0;
+	 font-size:2.5rem; 
+	 text-transform:uppercase;
+	 font-weight:800;
   }
   
   h2 {
-	margin:0 0 0 5rem;  
+	margin:-.3rem 0 3.5rem 0; 
+	text-transform:uppercase; 
+	font-size:1.7rem;
+	font-weight:200;
+  }
+  
+  .description {
+	  margin:1.7rem 0 0 0;
+	  font-weight:200;
+  }
+  
+  .arrows p {
+	  font-size:2rem;
+	  font-weight:300;
+  }
+  
+  nav ul li {
+	  font-size:1.6rem;
+  }
+  
+  .biglucid {
+	  height:59%;
+	  width:59%;
+	  margin-left:8rem;
   }
   
   /* ////////////////////////////////////////////////////////////////////////////////SCREEN SIZE VARIANTS */
@@ -73,15 +85,20 @@ a:visited {
     .logo {
 		height:5rem;
 		width:5rem;
-		margin-bottom:3rem;
+		margin-top:3rem;
+		margin-bottom:2rem;
+		font-size:1rem;
+	}
+	 nav ul li{
+		display:block;
+		margin-bottom:.7rem;
+		margin-right:0;
+		font-size:1rem;
 	}
 }
 
 @media only screen and (max-width: 64.063rem) {
-    nav ul li{
-		display:block;
-		margin-bottom:.7rem;
-	}
+    
 	
 	.logo {
 		height:5rem;
@@ -91,7 +108,12 @@ a:visited {
 }
 
 @media only screen and (min-width: 40.063rem) {
-    
+    nav ul li{
+		display:block;
+		margin-bottom:.7rem;
+		margin-right:0;
+		font-size:1.3rem;
+	}
 }
 
 @media only screen and (min-width: 64.063rem) {
@@ -99,5 +121,19 @@ a:visited {
 		height:5rem;
 		width:5rem;
 		margin-top:-4rem;
+	}
+	nav ul li{
+		display:inline;
+		margin-bottom:.7rem;
+		margin-right:2rem;
+		font-size:1.6rem;
+	}
+	
+	nav ul li:last-child {
+		margin-right:0;
+	}
+	
+	nav ul {
+		margin-left:-5rem;
 	}
 }

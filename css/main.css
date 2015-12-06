@@ -9,6 +9,8 @@
 	width:100%;
 }
 
+
+
 .nav {
 	margin-top:-5.5%;
 	}
@@ -50,7 +52,7 @@ a:visited {
 
 
 .portfolio {
-	margin-top:5%;
+	margin-top:3%;
 }
 
 .img-1 {
@@ -84,9 +86,7 @@ a:visited {
 	background-color:#A1A1A1;
 }
 
-.ppmargin {
-	margin:-3rem 0 0 0;
-}
+
 
 .selfie {
 	margin:5rem 0 0 0;
@@ -103,10 +103,19 @@ a:visited {
 	margin-top:2rem;
 }
 
-
+.underline {
+	 border-bottom: 3px solid #000;
+	 
+ }
 
 .tk-brandon-grotesque {
-	font-weight:900;
+	
+}
+
+.icon {
+	height:4rem;
+	width:4rem;
+	margin-bottom:3rem;
 }
 
 /*nav ul li a:hover { 
@@ -136,26 +145,38 @@ figure#mouse-pointer a:hover {
 	z-index: 0;
 }
 
+
+
 @media only screen and (max-width: 64.0625em) {
 	nav li {
 	display:inline;
 	margin-right:3rem;
 	color:white;
 	text-transform:uppercase;
-	font-size:1.75rem;
+	font-size:1.5rem;
 	font-weight:700;
 	
+}
+
+nav li:last-child {
+	margin-right:0;
 }
 }
 
 @media only screen and (max-width: 40.0625em) {
 	nav li {
-	display:inline;
-	margin-right:3rem;
+	display:block;
+	margin-right:0;
 	color:white;
 	text-transform:uppercase;
-	font-size:1.2rem;
+	font-size:1rem;
 	font-weight:700;
 	
+}
+
+
+
+nav ul {
+	margin-top:-3rem;
 }
 }
