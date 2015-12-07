@@ -14,9 +14,7 @@ a:link {
 	color:black;
 }
 
-a:hover {
-	color:blue;
-}
+
 
 a:visited {
 	color:black;
@@ -87,6 +85,32 @@ a:visited {
 	  margin-top:1.5rem;
   }
   
+  .s-and-t-description {
+	  margin:1rem 0 0 0;
+  }
+  
+  .s-and-t {
+	  height:25%;
+	  width:25%;
+	  margin:2rem 0 0 5rem;
+  }
+  
+  .email {
+	margin-top:5rem;
+	font-weight:500 !important;  
+  }
+  
+  .gray a:hover {
+	color:gray;  
+  }
+  
+  * {
+	
+}
+a:hover {
+	cursor:url(../img/rocknroll.png), default !important;
+}
+
   /* ////////////////////////////////////////////////////////////////////////////////SCREEN SIZE VARIANTS */
 
 @media only screen and (max-width: 40rem) {
@@ -102,6 +126,11 @@ a:visited {
 		margin-bottom:.7rem;
 		margin-right:0;
 		font-size:1rem;
+	}
+	
+	.s-and-t {
+		height:35%;
+		width:35%;
 	}
 }
 

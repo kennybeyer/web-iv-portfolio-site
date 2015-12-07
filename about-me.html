@@ -18,34 +18,57 @@
 			  <nav>
                 <div class="small-centered text-center columns">
                     <ul>
-                    	<li><a href="index.html"><img src="img/KBdesignalien-01.svg" class="logo"></a></li>
-                        <li><a href="design.html">Design</a></li>
-                        <li><a href="photography.html">Photography</a></li>
-                        <li><a href="about-me.html" class="underline">About Me</a></li>
+                    	<li><a href="index.html"><img src="img/KBdesignalien-01.svg" alt="logo" class="logo"></a></li>
+                        <li class="threed"><a href="design.html">Design</a></li>
+                        <li class="threed"><a href="photography.html">Photography</a></li>
+                        <li class="threed"><a href="about-me.html" class="underline">About Me</a></li>
                     </ul>
                 </div>
               </nav>
            </div>   
         </div>      
-<div class="row">
+<div class="row portfolio">
 	
-        <div class="large-6 large-uncentered medium-10 medium-centered column selfie">
-        	<img src="http://placehold.it/600x350">
+        <div class="large-6 small-centered medium-8 medium-centered large-uncentered column selfie">
+        	<img src="img/me.jpg">
 
         </div>
-        <div class="large-6 large-uncentered medium-10 medium-centered column bio">
-            <p class="right">Hi, my name is Kenneth and stuff. Lorem ipsum dolor sit amet, mel ex ocurreret explicari liberavisse, sed in nullam dissentiet, eu fierent expetenda cum. Cum natum facilis senserit et, ex utroque inermis ponderum eos, sed noster argumentum an. Sea erant munere molestiae eu, in nam dicit disputando. Nonumy impetus periculis te eam, per ad lucilius gloriatur. In etiam prodesset vix, quo ei viris senserit sententiae. Eam ex choro omnium, mea an cetero vocibus sapientem.</p>
+        <div class="large-6 small-centered medium-8 medium-centered large-uncentered preview column bio">
+            <p>Hey, thanks for checking out my site! My name is Kenny and I am a Graphic Design student at Southeast Community College in Lincoln, NE. I was born and raised here so the Lincoln community has a very special place in my heart. I have loved art and photography for as long as I can remember and to me, design is just an extension of that love. Design lets me communicate my thoughts and ideas through visual elements more effectively than I could ever imagine. Let me know if you're in need of a design solution or just want to hang out and talk! </p>
         </div>
-	        
+        <div class="large-6 small-centered medium-8 medium-centered large-uncentered preview column bio email gray">
+	       <p class="email">Email me at <a href="mailto:kennybeyer37@gmail.com">kennybeyer37@gmail.com</a>!</p>
+        </div>
 </div>
 <div class="row icons">
-	<div class="column large-12">
-        <ul>
-            <li><a href="https://www.facebook.com/kenny.beyer" target="_blank"><div class="facebook"></div></a></li>
-            <li><a href="https://www.instagram.com/thegreatbambi37/" target="_blank"><div class="instagram"></div></a></li>
-            <li><div class="twitter"></div></li>
-        </ul>  
-    </div>      
+  <div class="columns text-center small-centered">
+    <ul>
+      <li><a href="https://www.facebook.com/kenny.beyer" target="_blank">
+        <div class="icon"><img class="xyz" data-alt-src="img/facebookicon3d.jpg" alt="nada-surf-gig-poster" src="img/facebookicon.jpg" /></div>
+        </a></li>
+      <li><a href="https://www.instagram.com/thegreatbambi37/" target="_blank">
+        <div class="icon"><img class="xyz" data-alt-src="img/instaicon3d.jpg" alt="nada-surf-gig-poster" src="img/instaicon.jpg" /></div>
+        </a></li>
+      <li><a href="https://twitter.com/" target="_blank">
+        <div class="icon"><img class="xyz" data-alt-src="img/twittericon3d.jpg" alt="nada-surf-gig-poster" src="img/twittericon.jpg" /></div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="row">
+    <div class="column small-6 preview">
+    	<div class="small-centered text-center columns">
+            <p>&copy; Copyright Kenny Beyer</p>
+        </div>    
+    </div>
+    <div class="column small-6 preview">
+    	<div class="small-centered text-center columns">
+            <p><a href="mailto:kennybeyer37@gmail.com">Email Me!
+            
+            </a></p>
+        </div>    
+    </div>
 </div>
     
     
@@ -55,16 +78,17 @@
     <script>
       $(document).foundation();
 	  
-	  $(function (){
-		
-		$(window).mousemove(function(event) {
-			$('#mouse-pointer').css({
-				'top' : event.pageY + 'px',
-				'left' : event.pageX + 'px'
-			});
-		});
+	  var sourceSwap = function () {
+        var $this = $(this);
+        var newSource = $this.data('alt-src');
+        $this.data('alt-src', $this.attr('src'));
+        $this.attr('src', newSource);
+    }
 	
-	});
+	
+    $(function () {
+        $('img.xyz').hover(sourceSwap, sourceSwap);
+    });
     </script>
     <script src="https://use.typekit.net/inc5lni.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>

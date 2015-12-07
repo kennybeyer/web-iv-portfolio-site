@@ -19,9 +19,9 @@
                 <div class="small-centered text-center columns">
                     <ul>
                     	<li><a href="index.html"><img src="img/KBdesignalien-01.svg" alt="logo" class="logo"></a></li>
-                        <li><a href="design.html" class="underline">Design</a></li>
-                        <li><a href="photography.html">Photography</a></li>
-                        <li><a href="about-me.html">About Me</a></li>
+                        <li class="threed"><a href="design.html" class="underline">Design</a></li>
+                        <li class="threed"><a href="photography.html">Photography</a></li>
+                        <li class="threed"><a href="about-me.html">About Me</a></li>
                     </ul>
                 </div>
               </nav>
@@ -66,33 +66,53 @@
 </div>
 
 
-<!--<div class="row port-margin">
-	<div class="large-6 column">
-    	<div class="sm-product">
-        </div>
+<div class="row icons">
+  <div class="columns text-center small-centered">
+    <ul>
+      <li><a href="https://www.facebook.com/kenny.beyer" target="_blank">
+        <div class="icon"><img class="xyz" data-alt-src="img/facebookicon3d.jpg" alt="nada-surf-gig-poster" src="img/facebookicon.jpg" /></div>
+        </a></li>
+      <li><a href="https://www.instagram.com/thegreatbambi37/" target="_blank">
+        <div class="icon"><img class="xyz" data-alt-src="img/instaicon3d.jpg" alt="nada-surf-gig-poster" src="img/instaicon.jpg" /></div>
+        </a></li>
+      <li><a href="https://twitter.com/" target="_blank">
+        <div class="icon"><img class="xyz" data-alt-src="img/twittericon3d.jpg" alt="nada-surf-gig-poster" src="img/twittericon.jpg" /></div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="row">
+    <div class="column small-6 preview">
+    	<div class="small-centered text-center columns">
+            <p>&copy; Copyright Kenny Beyer</p>
+        </div>    
     </div>
-    <div class="large-6 column">
-    	<div class="sm-product">
-        </div>
+    <div class="column small-6 preview">
+    	<div class="small-centered text-center columns">
+            <p><a href="mailto:kennybeyer37@gmail.com">Email Me!
+            
+            </a></p>
+        </div>    
     </div>
-</div>-->
-
+</div>
 
 <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script>
       $(document).foundation();
 	  
-	  $(function (){
-		
-		$(window).mousemove(function(event) {
-			$('#mouse-pointer').css({
-				'top' : event.pageY + 'px',
-				'left' : event.pageX + 'px'
-			});
-		});
+	   var sourceSwap = function () {
+        var $this = $(this);
+        var newSource = $this.data('alt-src');
+        $this.data('alt-src', $this.attr('src'));
+        $this.attr('src', newSource);
+    }
 	
-	});
+	
+    $(function () {
+        $('img.xyz').hover(sourceSwap, sourceSwap);
+    });
     </script>
     <script src="https://use.typekit.net/inc5lni.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
