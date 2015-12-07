@@ -103,28 +103,8 @@ a:visited {
 cursor:progress; 
 }*/
 
-* {
-	cursor: none;
-}
-figure#mouse-pointer {
-	background: url('../img/rocknroll.png') no-repeat;
-	width: 12rem;
-	height: 12rem;
-	position: absolute;
-	margin: -140px 0 0 -140px;
-	display: block;
-	z-index: 0;
-}
 
-figure#mouse-pointer a:hover {
-	background: url('../img/rocknrollbig.png') no-repeat;
-	width: 12rem;
-	height: 12rem;
-	position: absolute;
-	margin: -140px 0 0 -140px;
-	display: block;
-	z-index: 0;
-}
+
 
 
 
