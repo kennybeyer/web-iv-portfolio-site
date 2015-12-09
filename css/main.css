@@ -4,16 +4,22 @@
 		
 
 		
-.hero {
-	height:100%;
-	width:100%;
+
+
+.wrapper { 
+  /*background:url(../img/hero3d.jpg) no-repeat center center fixed;*/ 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
 }
 
-
-
 .nav {
-	margin-top:-5.5%;
-	}
+	margin:0 0 0 0;
+	position: fixed;
+ 	bottom: 0rem;
+}
 
 nav li {
 	display:inline;
@@ -22,23 +28,24 @@ nav li {
 	text-transform:uppercase;
 	font-size:2rem;
 	font-weight:700;
-	letter-spacing:4.8px;
+	letter-spacing:7px;
+	
 }
 
-a:link {
+/*a:link {
 	color:white;
 }
 
-/*.threed a:hover {
+.threed a:hover {
 	text-shadow: -0.1em 0 red, 0.1em 0 cyan !important;
 	
 	
-}*/
-
+}
+*/
 a:visited {
 	color:white;
 }
-
+/*
 .design-nav a:link {
 	color:black;
 }
@@ -50,19 +57,7 @@ a:visited {
 .design-nav a:visited {
 	color:black;
 }
-
-
-
-.portfolio {
-	margin-top:3%;
-}
-
-
-
-
-
-
-
+*/
 
 .row .bio p {
 	margin:-2.4rem 0 0 0;
@@ -96,18 +91,16 @@ cursor:progress;
 	
 }
 a:hover {
-	cursor:url(img/rocknroll.png), default !important;
-	
+	cursor:url(../img/rocknroll.png), default !important;
+	color:#D7D7D7;
 }
-
-
 
 
 
 @media only screen and (max-width: 64.0625em) {
 	nav li {
 	display:inline;
-	margin-right:3rem;
+	margin:0 3rem 1rem 0;
 	color:white;
 	text-transform:uppercase;
 	font-size:1.5rem;
@@ -119,9 +112,17 @@ nav li:last-child {
 	margin-right:0;
 }
 
-.selfie {
-	margin:10% 0 14% 0;	
+.underline {
+	 border-bottom: 2px solid #000;
+	 
+ }
+ 
+  .row .bio p {
+	margin:5rem 0 0 0;
+	font-weight:300;
 }
+
+ 
 }
 
 @media only screen and (max-width: 40.0625em) {
@@ -135,12 +136,24 @@ nav li:last-child {
 	
 }
 
-.selfie {
-	margin:2% 0 15% 0;	
+
+.nav {
+	bottom:3rem;	
+	
+}
+
+.underline {
+	 border-bottom: 2px solid #000;
+	 
+ }
+ 
+ .row .bio p {
+	margin:5rem 0 0 0;
+	font-weight:300;
 }
 
 nav ul {
-	margin:-40% 0 0 -1rem;
-	
+	margin-bottom:-2rem;
 }
+
 }

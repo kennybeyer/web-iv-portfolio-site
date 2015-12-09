@@ -2,6 +2,7 @@
 
 nav {
 	margin:7% 0 7% 0;
+	z-index:100;
 }
  
  
@@ -69,6 +70,7 @@ a:visited {
   
   nav ul li {
 	  font-size:1.6rem;
+	  z-index:100;
   }
   
   .biglucid {
@@ -97,11 +99,13 @@ a:visited {
   
   .email {
 	margin-top:5rem;
-	font-weight:500 !important;  
+	font-size:1.6rem;
+	font-weight:300 !important; 
   }
   
+ 
   .gray a:hover {
-	color:gray;  
+	color:#5E5E5E;  
   }
   
   * {
@@ -111,21 +115,25 @@ a:hover {
 	cursor:url(../img/rocknroll.png), default !important;
 }
 
+.bold {
+font-weight:400;	
+}
+
   /* ////////////////////////////////////////////////////////////////////////////////SCREEN SIZE VARIANTS */
 
 @media only screen and (max-width: 40rem) {
     .logo {
 		height:5rem;
 		width:5rem;
-		margin-top:35%;
+		margin-top:5%;
 		margin-bottom:2rem;
-		font-size:1rem;
+		
 	}
 	 nav ul li{
 		display:block;
-		margin-bottom:.7rem;
+		margin-bottom:1rem;
 		margin-right:0;
-		font-size:1rem;
+		font-size:1.3rem;
 	}
 	
 	.s-and-t {
@@ -142,6 +150,9 @@ a:hover {
 		width:5rem;
 		margin-bottom:3rem;
 	}
+	
+	
+	
 }
 
 @media only screen and (min-width: 40.063rem) {
@@ -149,7 +160,7 @@ a:hover {
 		display:block;
 		margin-bottom:.7rem;
 		margin-right:0;
-		font-size:1.3rem;
+		font-size:1.6rem;
 	}
 }
 
