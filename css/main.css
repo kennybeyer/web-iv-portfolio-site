@@ -60,7 +60,7 @@ a:visited {
 */
 
 .row .bio p {
-	margin:-2.4rem 0 0 0;
+	margin:-.5rem 0 0 0;
 	font-weight:300;
 }
 
@@ -92,10 +92,24 @@ cursor:progress;
 }
 a:hover {
 	cursor:url(../img/rocknroll.png), default !important;
-	color:#D7D7D7;
+	color:#D7D7D7!important;
 }
 
+/*a:hover{
+cursor:url(../img/rocknroll.cur), default;
+}*/
 
+#white {
+	color:white;
+}
+
+#white-two {
+	color:white;
+}
+
+#white-three {
+	color:white;
+}
 
 @media only screen and (max-width: 64.0625em) {
 	nav li {
@@ -121,6 +135,11 @@ nav li:last-child {
 	margin:5rem 0 0 0;
 	font-weight:300;
 }
+
+nav ul {
+	margin:0 0 -2rem 0 !important;
+} 
+ 
 
  
 }
@@ -148,7 +167,7 @@ nav li:last-child {
  }
  
  .row .bio p {
-	margin:5rem 0 0 0;
+	margin:3rem 0 0 0;
 	font-weight:300;
 }
 

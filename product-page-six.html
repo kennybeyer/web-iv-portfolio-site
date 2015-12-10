@@ -114,6 +114,15 @@
     $(function () {
         $('img.xyz').hover(sourceSwap, sourceSwap);
     });
+	
+	$.preloadImages = function() {
+  for (var i = 0; i < arguments.length; i++) {
+    $("<img />").attr("src", arguments[i]);
+  }
+}
+
+$.preloadImages("img/facebookicon.jpg", "img/instaicon.jpg", "img/twittericon.jpg");
+	
     </script>
     <script src="https://use.typekit.net/inc5lni.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>

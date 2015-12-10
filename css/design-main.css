@@ -119,6 +119,10 @@ a:hover {
 font-weight:400;	
 }
 
+.italic{
+	font-weight:100;
+}
+
   /* ////////////////////////////////////////////////////////////////////////////////SCREEN SIZE VARIANTS */
 
 @media only screen and (max-width: 40rem) {
@@ -140,6 +144,10 @@ font-weight:400;
 		height:35%;
 		width:35%;
 	}
+	
+	.selfie {
+		margin-top:4rem;
+	}
 }
 
 @media only screen and (max-width: 64.063rem) {
@@ -152,7 +160,9 @@ font-weight:400;
 	}
 	
 	
-	
+	.portfolio {
+		margin-top:2rem;
+	}
 }
 
 @media only screen and (min-width: 40.063rem) {
@@ -182,6 +192,6 @@ font-weight:400;
 	}
 	
 	nav ul {
-		margin-left:-5rem;
+		margin-left:-4.5rem;
 	}
 }

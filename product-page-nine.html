@@ -47,7 +47,7 @@
         	<img src="img/sultanskiteweb.jpg" alt="foreign-chocolate">
         </div>
         <div class="medium-6 small-12 columns preview">
-        	<p class="description">This chocolate bar concept was intended to be sold in Switzerland. The idea was to pull inspiration from the mountainous region. The ingredients—chocolate and emerald ("smaragd" in German)—are metaphorically being pulled from the mines of these mountain to create and delightful rich mint candy bar.</p>
+        	<p class="description">Sultan's Kite is a delicious Mediterranean Grill in downtown Lincoln. Their old logo felt a little dated and wasn't attracting the younger, trendy demographic. This new logo is inspired a more whimsical <i class="italic">Aladdin</i> sort of feel.</p>
         </div>
         
 </div>
@@ -101,7 +101,13 @@
         $('img.xyz').hover(sourceSwap, sourceSwap);
     });
 	  
-	  
+	$.preloadImages = function() {
+  for (var i = 0; i < arguments.length; i++) {
+    $("<img />").attr("src", arguments[i]);
+  }
+}
+
+$.preloadImages("img/facebookicon.jpg", "img/instaicon.jpg", "img/twittericon.jpg");  
 	 
     </script>
     <script src="https://use.typekit.net/inc5lni.js"></script>

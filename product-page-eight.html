@@ -52,7 +52,7 @@
         
         
         <div class="medium-6 columns preview">
-       		<p class="description s-and-t-description">Old Spice's latest campaign has been aimed towards younger males the last few years, so I thought it would be nice to go after the older generation. These three new scents are variations of the old classic scent that has stood the test of time, but with a fresher style.</p>
+       		<p class="description s-and-t-description">Two of my good friends, Alex and Amanda Matczysczn(sp?) make awesome wedding videos in Omaha, NE, and they needed a logo. I came up with this after a few iterations for a pro-bono assignment.</p>
        </div>
 </div>    
         
@@ -106,6 +106,15 @@
     $(function () {
         $('img.xyz').hover(sourceSwap, sourceSwap);
     });
+	
+	$.preloadImages = function() {
+  for (var i = 0; i < arguments.length; i++) {
+    $("<img />").attr("src", arguments[i]);
+  }
+}
+
+$.preloadImages("img/facebookicon.jpg", "img/instaicon.jpg", "img/twittericon.jpg");
+	
     </script>
     <script src="https://use.typekit.net/inc5lni.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
