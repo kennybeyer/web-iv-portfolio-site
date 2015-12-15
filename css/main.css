@@ -12,7 +12,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  
+  background-position:center;
 }
 
 .nav {
@@ -137,13 +137,19 @@ nav li:last-child {
 }
 
 nav ul {
-	margin:0 0 -2rem 0 !important;
+	margin:0 0 2rem 0 !important;
 } 
  
 
  
 }
 
+@media only screen and (max-width: 50em) {
+	
+nav li {	
+	margin:0 1rem 1rem 0;
+}
+}
 @media only screen and (max-width: 40.0625em) {
 	nav li {
 	display:block;
@@ -171,8 +177,12 @@ nav ul {
 	font-weight:300;
 }
 
+.nav {
+	bottom:0rem;
+}
+
 nav ul {
-	margin-bottom:-2rem;
+	margin-bottom:-1rem;
 }
 
 }
