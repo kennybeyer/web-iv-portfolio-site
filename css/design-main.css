@@ -1,197 +1,184 @@
-@charset "UTF-8";
+@charset  "UTF-8";
 
 nav {
-	margin:7% 0 7% 0;
-	z-index:100;
+    margin: 7% 0;
+    z-index: 100;
 }
- 
- 
- 
+
 .project-description {
-	text-transform:uppercase;
+    text-transform: uppercase;
 }
 
 a:link {
-	color:black;
+    color: #000;
 }
 
-
-
 a:visited {
-	color:black;
+    color: #000;
 }
 
 .logo {
-	height:5rem;
-	width:5rem;
-	
+    height: 5rem;
+    width: 5rem;
 }
 
- 
- 
- .icons ul {
-	  
-	 margin-top:6rem;
- }
- 
- .icons ul li {
-	 display:inline-block;
-	 margin-right:4%;
- }
- 
- .icons ul li:last-child {
-	 
-	 margin-right:0;
- }
- 
-  h1 {
-	 margin:5rem 0 .4rem 0;
-	 font-size:2.5rem; 
-	 text-transform:uppercase;
-	 font-weight:800;
-  }
-  
-  h2 {
-	margin:-.3rem 0 3.5rem 0; 
-	text-transform:uppercase; 
-	font-size:1.7rem;
-	font-weight:200;
-  }
-  
-  .description {
-	  margin:1.7rem 0 0 0;
-	  font-weight:200;
-  }
-  
-  .arrows p {
-	  font-size:2rem;
-	  font-weight:300;
-  }
-  
-  nav ul li {
-	  font-size:1.6rem;
-	  z-index:100;
-  }
-  
-  .biglucid {
-	  height:59%;
-	  width:59%;
-	  margin-left:8rem;
-  }
-  
-  .universe-description {
-	  margin-bottom:32%;
-  }
-  
-  .oldspice-description {
-	  margin-top:1.5rem;
-  }
-  
-  .s-and-t-description {
-	  margin:1rem 0 0 0;
-  }
-  
-  .s-and-t {
-	  height:25%;
-	  width:25%;
-	  margin:2rem 0 0 5rem;
-  }
-  
-  .email {
-	margin-top:5rem;
-	font-size:1.6rem;
-	font-weight:300 !important; 
-  }
-  
- 
-  .gray a:hover {
-	color:#5E5E5E;  
-  }
-  
-  * {
-	
+.icons ul {
+    margin-top: 6rem;
 }
+
+.icons ul li {
+    display: inline-block;
+    margin-right: 4%;
+}
+
+.icons ul li:last-child {
+    margin-right: 0;
+}
+
+h1 {
+    margin: 5rem 0 .4rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+h2 {
+    margin: -.3rem 0 3.5rem;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    font-weight: 200;
+}
+
+.description {
+    margin: 1.7rem 0 0;
+    font-weight: 200;
+}
+
+.arrows p {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+nav ul li {
+    font-size: 1.6rem;
+    z-index: 100;
+}
+
+.biglucid {
+    height: 59%;
+    width: 59%;
+    margin-left: 8rem;
+}
+
+.universe-description {
+    margin-bottom: 32%;
+}
+
+.oldspice-description {
+    margin-top: 1.5rem;
+}
+
+.s-and-t-description {
+    margin: 1rem 0 0;
+}
+
+.s-and-t {
+    height: 25%;
+    width: 25%;
+    margin: 2rem 0 0 5rem;
+}
+
+.email {
+    margin-top: 5rem;
+    font-size: 1.6rem;
+    font-weight: 300 !important;
+}
+
+.gray a:hover {
+    color: #5E5E5E;
+}
+
+* {
+}
+
 a:hover {
-	cursor:url(../img/rocknroll.png), default !important;
+    cursor: url(../img/rocknroll.png),default !important;
 }
 
 .bold {
-font-weight:400;	
+    font-weight: 400;
 }
 
-.italic{
-	font-weight:100;
+.italic {
+    font-weight: 100;
 }
 
-  /* ////////////////////////////////////////////////////////////////////////////////SCREEN SIZE VARIANTS */
-
+/* ////////////////////////////////////////////////////////////////////////////////SCREEN SIZE VARIANTS */
 @media only screen and (max-width: 40rem) {
     .logo {
-		height:5rem;
-		width:5rem;
-		margin-top:5%;
-		margin-bottom:2rem;
-		
-	}
-	 nav ul li{
-		display:block;
-		margin-bottom:1rem;
-		margin-right:0;
-		font-size:1.3rem;
-	}
-	
-	.s-and-t {
-		height:35%;
-		width:35%;
-	}
-	
-	.selfie {
-		margin-top:4rem;
-	}
+        height: 5rem;
+        width: 5rem;
+        margin-top: 5%;
+        margin-bottom: 2rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 1rem;
+        margin-right: 0;
+        font-size: 1.3rem;
+    }
+
+    .s-and-t {
+        height: 35%;
+        width: 35%;
+    }
+
+    .selfie {
+        margin-top: 4rem;
+    }
 }
 
 @media only screen and (max-width: 64.063rem) {
-    
-	
-	.logo {
-		height:5rem;
-		width:5rem;
-		margin-bottom:3rem;
-	}
-	
-	
-	.portfolio {
-		margin-top:2rem;
-	}
+    .logo {
+        height: 5rem;
+        width: 5rem;
+        margin-bottom: 3rem;
+    }
+
+    .portfolio {
+        margin-top: 2rem;
+    }
 }
 
 @media only screen and (min-width: 40.063rem) {
-    nav ul li{
-		display:block;
-		margin-bottom:.7rem;
-		margin-right:0;
-		font-size:1.6rem;
-	}
+    nav ul li {
+        display: block;
+        margin-bottom: .7rem;
+        margin-right: 0;
+        font-size: 1.6rem;
+    }
 }
 
 @media only screen and (min-width: 64.063rem) {
     .logo {
-		height:5rem;
-		width:5rem;
-		margin-top:-4rem;
-	}
-	nav ul li{
-		display:inline;
-		margin-bottom:.7rem;
-		margin-right:2rem;
-		font-size:1.6rem;
-	}
-	
-	nav ul li:last-child {
-		margin-right:0;
-	}
-	
-	nav ul {
-		margin-left:-4.5rem;
-	}
+        height: 5rem;
+        width: 5rem;
+        margin-top: -4rem;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-bottom: .7rem;
+        margin-right: 2rem;
+        font-size: 1.6rem;
+    }
+
+    nav ul li:last-child {
+        margin-right: 0;
+    }
+
+    nav ul {
+        margin-left: -4.5rem;
+    }
 }

@@ -1,188 +1,140 @@
-@charset "UTF-8";
+@charset  "UTF-8";
+
 /* CSS Document */
+.wrapper {
 
-		
-
-		
-
-
-.wrapper { 
-  /*background:url(../img/hero3d.jpg) no-repeat center center fixed;*/ 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position:center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
 }
 
 .nav {
-	margin:0 0 0 0;
-	position: fixed;
- 	bottom: 0rem;
+    margin: 0;
+    position: fixed;
+    bottom: 0;
 }
 
 nav li {
-	display:inline;
-	margin-right:3rem;
-	color:white;
-	text-transform:uppercase;
-	font-size:2rem;
-	font-weight:700;
-	letter-spacing:7px;
-	
+    display: inline;
+    margin-right: 3rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 7px;
 }
 
-/*a:link {
-	color:white;
-}
-
-.threed a:hover {
-	text-shadow: -0.1em 0 red, 0.1em 0 cyan !important;
-	
-	
-}
-*/
 a:visited {
-	color:white;
+    color: #fff;
 }
-/*
-.design-nav a:link {
-	color:black;
-}
-
-.design-nav a:hover {
-	color:blue;
-}
-
-.design-nav a:visited {
-	color:black;
-}
-*/
 
 .row .bio p {
-	margin:-.5rem 0 0 0;
-	font-weight:300;
+    margin: -.5rem 0 0;
+    font-weight: 300;
 }
 
 .preview {
-	margin-top:2rem;
+    margin-top: 2rem;
 }
 
 .underline {
-	 border-bottom: 3px solid #000;
-	 
- }
+    border-bottom: 3px solid #000;
+}
 
 .tk-brandon-grotesque {
-	font-family: "brandon-grotesque", sans-serif !important;
+    font-family: "brandon-grotesque",sans-serif !important;
 }
 
 .icon {
-	height:3.7rem;
-	width:3.7rem;
-	margin:7rem 0 0 0;
+    height: 3.7rem;
+    width: 3.7rem;
+    margin: 7rem 0 0;
 }
-
-/*nav ul li a:hover { 
-cursor:progress; 
-}*/
 
 * {
-	
-}
-a:hover {
-	cursor:url(../img/rocknroll.png), default !important;
-	color:#D7D7D7!important;
 }
 
-/*a:hover{
-cursor:url(../img/rocknroll.cur), default;
-}*/
+a:hover {
+    cursor: url(../img/rocknroll.png),default !important;
+    color: #D7D7D7 !important;
+}
 
 #white {
-	color:white;
+    color: #fff;
 }
 
 #white-two {
-	color:white;
+    color: #fff;
 }
 
 #white-three {
-	color:white;
+    color: #fff;
 }
 
 @media only screen and (max-width: 64.0625em) {
-	nav li {
-	display:inline;
-	margin:0 3rem 1rem 0;
-	color:white;
-	text-transform:uppercase;
-	font-size:1.5rem;
-	font-weight:700;
-	
-}
+    nav li {
+        display: inline;
+        margin: 0 3rem 1rem 0;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
 
-nav li:last-child {
-	margin-right:0;
-}
+    nav li:last-child {
+        margin-right: 0;
+    }
 
-.underline {
-	 border-bottom: 2px solid #000;
-	 
- }
- 
-  .row .bio p {
-	margin:5rem 0 0 0;
-	font-weight:300;
-}
+    .underline {
+        border-bottom: 2px solid #000;
+    }
 
-nav ul {
-	margin:0 0 2rem 0 !important;
-} 
- 
+    .row .bio p {
+        margin: 5rem 0 0;
+        font-weight: 300;
+    }
 
- 
+    nav ul {
+        margin: 0 0 2rem !important;
+    }
 }
 
 @media only screen and (max-width: 50em) {
-	
-nav li {	
-	margin:0 1rem 1rem 0;
+    nav li {
+        margin: 0 1rem 1rem 0;
+    }
 }
-}
+
 @media only screen and (max-width: 40.0625em) {
-	nav li {
-	display:block;
-	margin-right:0;
-	color:white;
-	text-transform:uppercase;
-	font-size:1.5rem;
-	font-weight:700;
-	
-}
+    nav li {
+        display: block;
+        margin-right: 0;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
 
+    .nav {
+        bottom: 3rem;
+    }
 
-.nav {
-	bottom:3rem;	
-	
-}
+    .underline {
+        border-bottom: 2px solid #000;
+    }
 
-.underline {
-	 border-bottom: 2px solid #000;
-	 
- }
- 
- .row .bio p {
-	margin:3rem 0 0 0;
-	font-weight:300;
-}
+    .row .bio p {
+        margin: 3rem 0 0;
+        font-weight: 300;
+    }
 
-.nav {
-	bottom:0rem;
-}
+    .nav {
+        bottom: 0;
+    }
 
-nav ul {
-	margin-bottom:-1rem;
-}
-
+    nav ul {
+        margin-bottom: -1rem;
+    }
 }
