@@ -47,6 +47,12 @@ a:visited {
     font-family: "brandon-grotesque",sans-serif !important;
 }
 
+.not-3d {
+	font-size: 1rem !important;
+	text-transform: uppercase !important;
+	letter-spacing: 3px;
+}
+
 .icon {
     height: 3.7rem;
     width: 3.7rem;
@@ -60,6 +66,17 @@ a:hover {
     cursor: url(../img/rocknroll.png),default !important;
     color: #D7D7D7 !important;
 }
+
+.gold {
+	color:#B19B51;
+	text-transform:uppercase;
+}
+
+.silver {
+	color:#B5B5B5;
+	text-transform:uppercase;
+}
+
 
 #white {
     color: #fff;
